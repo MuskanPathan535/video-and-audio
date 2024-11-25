@@ -1,0 +1,85 @@
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="registration.css">  <!-- Link to registration page CSS -->
+<!-- </head>
+<body>
+  <div id="register-container">
+    <h1>Register</h1>
+    <form id="registrationForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      
+      <button type="submit">Register</button>
+    </form>
+    <p>Already have an account? <a href="index.html">Go to the Welcome page</a></p>
+  </div>
+
+  <script>
+    document.getElementById("registrationForm").addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent form submission
+      
+      // Get username from the form
+      const username = document.getElementById("username").value;
+
+      // Save username in localStorage
+      localStorage.setItem("username", username);
+
+      // Redirect to the Welcome page
+      window.location.href = "index.html";
+    });
+  </script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>  -->
+
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+  <div id="register-container">
+    <h1>Register</h1>
+    <form id="registrationForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      
+      <button type="submit">Register</button>
+    </form>
+    <p>Already have an account? <a href="index.html">Go to the Welcome page</a></p>
+  </div>
+
+  <script>
+    document.getElementById("registrationForm").addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent form submission
+      
+      // Get username from the form
+      const username = document.getElementById("username").value;
+
+      // Save username in localStorage
+      localStorage.setItem("username", username);
+
+      // Redirect to the main page
+      window.location.href = "index.html";
+    });
+  </script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Call, Audio Call, and Chat</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="container">
+    <div id="video-container">
+      <video id="localVideo" autoplay muted></video>
+      <video id="remoteVideo" autoplay></video>
+    </div>
+    <div id="chat-container">
+      <div id="messages"></div>
+      <input type="text" id="chatInput" placeholder="Type a message...">
+      <button id="sendButton">Send</button>
+    </div>
+    <div id="controls">
+      <button id="startVideoCall">Start Video Call</button>
+      <button id="startAudioCall">Start Audio Call</button>
+    </div>
+  </div>
+  
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Call, Audio Call, and Chat</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="container">
+    <div id="video-container">
+      <video id="localVideo" autoplay muted></video>
+      <video id="remoteVideo" autoplay></video>
+    </div>
+    <div id="chat-container">
+      <div id="messages"></div>
+      <input type="text" id="chatInput" placeholder="Type a message...">
+      <button id="sendButton">Send</button>
+    </div>
+    <div id="controls">
+      <button id="startVideoCall">Start Video Call</button>
+      <button id="startAudioCall">Start Audio Call</button>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // Check if the user is registered
+    const username = localStorage.getItem("username");
+    if (!username) {
+      window.location.href = "registration.html"; // Redirect if not registered
+    }
+  </script>
+</body>
+</html>
+
